@@ -1,0 +1,56 @@
+1)CSS -- Cascading Style sheets is used to say the browser how to render the content written in the HTML
+
+2)In order to use the CSS we can do that in 3 ways
+    a)Inline CSS --- using the style attribute in the element opening tag This is generally used to style the single element.
+    b)interior Css -- using the <style></style> in the Head tag of the HTML. This is generally used to style the single page.
+    c)Exterior CSS -- using the <link rel="stylesheet" href="style.css"> in the Head tag of the HTML. This is generally used is there are many html pages and changing in the style.css file wull change the styling in all pages.
+    here "style.css" is the file name of the css file.
+    **NOTE** ===> Always the css files have the .css extension
+
+3)The structure how we mention the styling for particular section is called css rule. and the syntax is
+    example  - h1 {
+                //here we need to write the key value pairs ending with semi-colon
+                //these key value pairs called as property-value pairs  
+            }
+            **NOTE** ==> Here h1 is called the selector and the combination of all the property-value pairs is called as declaration block.
+            ==> selector9in this case h1) tells the browser which element to target for the style.
+
+4)There are many kinds of selectors.
+    a)Element selector ---> syntax is h1{}
+    b)ID selector      ---> syntax is #h1{} ---> In the entire html code the id will beunique and by this only particular element with that id will be styled.
+    c)class selector ---> .h1{} ---> can assign same class name to different html elements
+
+5)Descendents selecrors ---> This will be useful if the element which we want to style is inside other element.
+    a) If we want to select a particular for suppose h1 which is present inside other element see example
+        ex - <div id="demo">
+                <h1>this is iside demo</h1>
+                <div>
+                    <h1>this is outside demo</h1>
+                </div>
+            </div>
+             <h1>this is completely outside div element selected.
+             
+        Here if in style we mention #demo h1{} then first the element with the id="demo" will be selected and inside that element the style will be applied to all h1 tags present. here line no 23 and 25 will be styled
+            -----> similarly can go to any depth for example if we want to style only line 25 then go to that div from the top syntax --- #demo div h1{}
+
+    b) If we want to style only the immediate child of the selected element then we need to use the child selector in css that is #demo > h1{}
+        --> Here from the previous example if we use #demo > h1{} then only the immediate h1 element will be selected.
+        that is only the line 23 will be styled.
+
+6):hover
+    syntax - a:hover{} ---> used to style the elements when we hover the mouse. mostly used for links
+
+7)The content will be surrounded by the padding and padding wil be surrounded by the border and border wil be surrounded the margin 
+    remember as content < padding < border < marin
+    BOX model this is used o organise the content in the webpage
+    margin specifies the distant between the two elements
+
+8)  block ---> css - display:block means the element will start in the new line and occupies the entire screen width
+        ---> The block elements will insert one empty line up and down in the web browser.
+    inline ---> css - display:inline means the element will not start in the new line
+        ---> The inline element will occupy just the size of the content and not start in the new line.
+        **NOTE** ===> By default there are some block and inline elements
+            <div>,<h1> to <h6> all are block elements
+            <span>,<em>,<i> these are inline elements
+
+9) margin propert in css is used to give the distance between the elements

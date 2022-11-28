@@ -1,0 +1,13 @@
+#explore {
+    background-color: aqua;
+    text-align: center;
+    border:  40px solid red;
+    border-style: solid;
+}
+.check-span {
+    display: block;
+    background-color: blueviolet; 
+    padding: 20px;
+    border: 30px;   
+    margin-bottom: 10px;
+}
