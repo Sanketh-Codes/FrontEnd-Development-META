@@ -1,0 +1,51 @@
+difference btw <b> and <strong> ?
+    <b>(bold Tag)----> is used when we need to draw the user attention
+    <strong>Tag -----> is used when we want to mention something is so important in the text.
+NOTE====> On screen there will be no difference in appearance only difference is the context of using.
+
+1) HTML(Hyper Text Markup Language)----> This is the standard language used by the web browser to structure the content.
+2) HTML consists of elements
+    element is made of start Tag + content + end Tag    
+    example - <p>WEb development is love</p>
+    ==> here <p> is the sart Tag, "Web development is love" is content and </p> is the closing Tag
+    **NOTE**----> some elements doesnt have the content and closing tag example- <br>(Line break) called as empty elements
+    **NOTE**----> We cannot see the tags in the browser but browser uses the tags and understand how the content between those tags should be displayed 
+
+    HTML structure
+    1)<DOCTTPE !HTML> ---> This specifies the web browser that the document belongs to HTML 5
+    2)<HTML></HTML> -----> This is the root element of the HTML (any tags should be inside this tag)
+    3)<HEAD></HEAD> -----> This is the tag where we include the meta data 
+    4)<TITLE></TITLE> ---> This is used to give the title to the page that is seen at the top tab(should be written inside the HEAD tag)
+    5)<BODY></BODY> -----> Any content that is displayed on screen should be mentioned inside this tag.
+
+3)Attributes are you to specify additional information about the elemens.
+    ---> Always included in the starting tag of the element
+    ---> title attribute is used to specify the text when we hover the mouse
+        example-- <p title="This is title">Welcome to web dev</p> here when we hover mouse on "welcome to web dev"
+                   the title is visible
+
+4)In HTML even if we give spaces and write content in differen lines the browser omits them
+    example-- <p>Hi this is web development
+                 first we will learn HTML
+                 Then CSS
+              </p> 
+                           
+                The above code displays on a single line as Hi this is web development first we will learn HTML Then CSS
+
+   **NOTE**---> In order to display the content as we write with spaces and line gaps use <pre></pre> tag
+
+5) Some Tags which I rarely used
+    a)<mark></mark> ---> The tet written in btw will be highlighted as yellow color (remember as just we do it in mail)
+    b)<del></del> -----> The text written in btw will be striked off (remember as seen in VScode for dev prj)
+    c)<sub></sub> -----> The text written in btw will be written some what down (remember as H2O)
+    d)<sup></sup> -----> The text written in btw will be written some what up (remember as 2 square 2)
+    e)<ins></ins> -----> The text written in btw will be written and underlined known as underlined
+    f)<blockquote></blockquote>---> The text written specifies that text belongs to other source. Generally browser indent thos text.
+    g)<q></q> ---> The browser adds the quotationmarks for the text.
+    h)<abbr></abbr> ---> denotes that the text is shortform. Generally browser adds the dash made of dots to text
+    i)<address></address> --> The browser adds one line at top and bottom and alsothe tests render in the italic format
+                            -> Generally used to mention address like email, house address, phone number
+    j)<cite></cite> ---> used to say the title of creative work. Browser renders he text as the italic.
+    k)<bdo></bdo> ---> used to render the text from left to right and attribute will be dir="rtl".
+
+6) Links attribute target has 4 values ("_self","_blank","_parent","_top") explaination is given in the hands-on file and image
