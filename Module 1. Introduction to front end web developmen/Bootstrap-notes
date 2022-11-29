@@ -1,0 +1,12 @@
+1.Bootstrap ---> This is the css and js library which is used to build the responsive web pages.
+2.Responsive designs --> This is the combination of three techniques
+                        a) Flexible Grids ---> consists of columns,glutter(the space between the columns) and margins(the space between the content and the left and right ends of screen)
+                                          ---> Flexible grids does not use the screen pixel but use the percentage to adjust the content to any screen resolution
+                        b) Fluid images ---> These are generally used with the <img> using this the images will be automatically set the width=100% and fits when the div container containing resizes (if the container becomes wider than the image then the image will not grow wider and will not loose pixels)
+                        c) Media queries ---> this means css will conditionally apply the styles.
+
+3.With the combination of the above three , responsive design is created which can adjust to any screen resolution. this is called responsive grid.
+4.In bootstrap the screen pixels are called breakpoints.
+5.Responsive grid has 3 types 
+        a) Fixed Grid ---> has the fixed width content coloumns and flexible margins will occupy remaining space on screen.
+        b) Fluid Grid ---> Has the fluid content columns that is the columns can grow or shrink with the available screen space.

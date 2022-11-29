@@ -1,0 +1,16 @@
+1.Inorder to develop a website we use the ready made functionalities sometime they are called libararies and framework
+
+2.As our code is depending on the libraries and framework we called them as depemdencies.
+
+3.Our projects have 100 s of dependencies and its very hard to download them individually and moreover its very hard to be inline with the team to ensure all are using the same version this is where we need "Package manager".
+
+4.Package Manager ---> This is the tool which downloads all the required dependencies we require. example- NPM
+
+5.Inorder to configure the dependencies downloaded in the HTML file it will take long time and thats where bundles comes in picture.
+
+6.Bundling ---> This helps to bundle up all the dependencies downloaded and make as a sngle file. example- Gulp and Webpack.
+    **NOTE** ===> If we want only couple of libraries we can directly include them in the html file
+                example--> if we want bootstrap library include in the <head></head> with the <link href="here mention the bootstrap library url" rel="stylesheet">
+                example--> To include javascript library include it in the <body></body> with the <script src="here mention js url">
+
+7.Responsive design---> This means the content in the page should be rendered in accordance with the screen resolution that is if it is mobile phone screen or laptop or desktop. And the bootstrap is the most widely used library to provide this responsive design feature.
