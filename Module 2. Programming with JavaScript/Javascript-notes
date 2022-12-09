@@ -85,3 +85,38 @@ function_name(arguments)----> This is the function call
 3. round() --> integer part value + 1 if decimal values is from 5 to 9 --> ex==> console.log(Math.round(4.5)) -- > output is 5.
                 integer part value if decial value is from 0 to 4 --> console.log(Math.round(4.4)) -- > output is 4.
 4.trunc() ---> output is just the integer part value ---> ex==> console.log(Math.trunc(4.9)) --> output is 4
+
+----------------------Bugs and Errors----------------------------------------------------
+1.Bugs ---> simply the piece of code which runs unexpectedly producing the results whoch are not expected but the program execution does not stop
+2.Errors ---> Code stops executing and throws errors and the lines below that code will not execute.
+        Types of errors 
+        a)Reference error--> This is thrown when the variable is used which is not declare anywhere.    
+        b)Type error --> Thrown when some predefined methods are being used on the types for which the method is not defined ex--> "Hello".pop()
+        c)Syntax error --> This is thrown when there is some kind of syntax problem and syntax error cant be handled using try catch
+        d)range error --> Thrown when using some predefines function and passing the argument which does not exist.
+            ex--> (10).toString(2)---> This converts the number 10 to base 2 that is to binary form //1010
+                (10).toString(18)---> converts 10 to base 8//12
+                (10).toString(36)--> converts to base 36 and 36 is the last base.
+                (10).toString(100)--> Throws range error
+
+3.Error Handling
+    This functionaity can be obtained using the try catch block
+    ex - > console.log(a+b);
+           console.log("This code never executes");
+        The above program throws error at line 1 and never execute line 2
+        In order to encounter this we need to use something known as try catch blocks.
+        ex--> try{
+            console.log(a+b);
+        }
+        catch(error){
+            console.log("This code will execute")
+        }
+        console.log("This code will also execute");
+
+    **NOTE** --> throw is used to manually throw the error  
+        ex--> try{
+            throw new ReferenceError(); //here ReferenceError is a predefined error constructor
+        }
+        catch(error){
+            console.log(error); //This will print a reference error onto screen 
+        }
