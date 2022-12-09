@@ -1,0 +1,87 @@
+1. Javascript is a programming language which is used to attain the feature of interaction. (user and the webpage)
+2. Javascript is the only web development language even there is a typescript but typescript is compiled down to javascript.
+3. Javascript can be used on client side(For interactions in front end) and also server side(backend in Node js).
+4. We can run the js code in both the ide(vscode using gurunner extension) or even in the browser developer tools (console)
+    ----> We can style the content in browser tag also.
+    example --> console.log('Hello world'); --> this statemnt just prints the hello world text
+            --> console.log('%cHello world','font-size:40px;color:red') --> this statement prints the hello world with size 40px and color red.
+
+5. Datatypes in JavaScript
+    a)String ---> var name="sanketh" or var name = 'sanketh'
+    b)Number --> var a = 123
+    c)Boolean
+    d)Null- absence of value
+    e)Unassigned -- value is unassigned
+    f)BigInt
+    g)Symbol -- used as an identifier
+
+6. there are many operaors but amongst them he most confusing for me atleast is == and ===
+    == is to check if the LHS AND RHS values are same and return true or false  ex - 10 == "10" returns true
+    === is to check if the LHS AND RHS value and also type is same ex- 10 === "10" returns false as LHS is of type Number and RHS is type string
+    != and also !== present and same rules as above apply
+
+------------------------------------Functions---------------------------------
+1.syntax --> function function_name(function parameters){
+    //body of the function i.e., code of the function that is to be executed ones called.
+}
+function_name(arguments)----> This is the function call
+    **NOTE** ---> Here if we want the size of string then use str.length 
+        eg - var str = "SAI BABA";
+                To get the str length use str.length
+
+---------------------------------Objects-------------------------------------------
+1. Object ---> Collection of related properties.
+    syntax ---> var car = {};----> This creates an empty object
+                car.speed = 132;
+                car.color = "red";
+                car.cost = 800000;
+            Here speed,color,cost are the properties of the car(object)
+
+    The above example will be as 
+        var car = {
+            speed : 132,
+            color : "red",
+            cost  : 800000
+        }
+
+    We can always add the new properties by using . operator
+        ex - car.isAcAvaialble = true
+    We can also update the previously created objects 
+        ex - car.color = "black";
+        console.log(car) ----> {speed : 132,color : "black",cost : 800000,isAvAvailable : true}
+    
+    There is another way of creating the property for the object----> Instead of . operator as we seen in above example we can use [] 
+        ex - > car['type'] = "Petrol"
+        console.log(car)----> {speed : 132,color : "black",cost : 800000,isAvAvailable : true,type:petrol}
+    
+
+    **NOTE** --> We can also add function to the object.
+                car.applyBreak() = function(){
+                    console.log("Break Applied");
+                }
+                This function of the object is called method and can only be accessed using the object.functionname() i.e., In our case car.applyBreak();
+    **NOTE** ---> Advantages of useing [] instead of .
+        1) We can add the space in the property name using [] but this is not possible with .
+            ex - > car."brand ambassador" = "Virat"----> This throws an error
+                   car["brand ambassador"] = "Virat" --> This is valid
+                   console.log(car) ---> {speed : 132,color : "black",cost : 800000,isAvAvailable : true,type:petrol,brand ambassador : "virat"}
+        2) We can also assign the property names with numbers how ever that doesnt make any sense.
+                ex - > car["2021"] = "new model"
+        3) We can perform the evaluation of expressions.
+                ex - > var carKeys = ["speed","color","cost","isAvAvailable","type","brand ambassador","2021"]
+                        var car = {
+                            speed : 132,
+                            color : "black",
+                            cost : 800000,
+                            isAvAvailable : true,
+                            type:petrol,
+                            brand ambassador : "virat"
+                        }
+                        console.log(car[carKeys[5]]) ----> evaluates to car["brand ambassador"] ---> evaluates to virat
+
+-------------------Math cheat sheet-------------------------------------------------
+1. ceil()--> output is inetegr part value + 1---> ex==> console.log(Math.ceil(4.1))----> output is 5.
+2. floor()--> output will be the inetger part value ---> ex==> console.log(Math.floor(4.9)) ---> output is 4.
+3. round() --> integer part value + 1 if decimal values is from 5 to 9 --> ex==> console.log(Math.round(4.5)) -- > output is 5.
+                integer part value if decial value is from 0 to 4 --> console.log(Math.round(4.4)) -- > output is 4.
+4.trunc() ---> output is just the integer part value ---> ex==> console.log(Math.trunc(4.9)) --> output is 4
