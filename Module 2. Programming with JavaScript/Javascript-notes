@@ -120,3 +120,63 @@ function_name(arguments)----> This is the function call
         catch(error){
             console.log(error); //This will print a reference error onto screen 
         }
+
+-------------------Programming Paradigms-------------------------------------
+
+In Javascript there are two types of programming paradigms--> Nothing but the way we approach the program and write the code.
+1) ========================Functional programming(FP)============================
+
+a)In functional programming we keep data and functioanlity seperate and access the function with the data only when needed.
+b)In FP function return the value after executing the function and that value can be used anywhere in the program   
+
+    ex--> var data = 5;
+          var mul = 3;
+          function calcu(a,b){
+            return a*b;
+          }
+          var val = calcu(data,mul);
+          console.log(val);//15
+
+)=========================Object Oriented Programming(OOP)=======================
+
+a)In OOP we group data and functionality as properties and objects.
+    ex--> The above FP example in OOP will be as
+            var my_obj = {
+                data:5,
+                mul:3,
+                cal:function(a,b){
+                    return a*b;
+                }
+            }
+            var val = my_obj.cal(my_obj.data,my_obj.mul);
+            console.log(val);//15
+
+Back to Funactional programming important concepts
+    1) Javascript functions are first-class functions because
+        a) Pass to other functions
+        b)save in a variable 
+        c) return from other functions
+
+        ex--> function setName(){
+            return "Hello";
+        }
+        var iWillSet;
+        iWillSet=setName;
+        console.log(iWillSet());
+    
+    2) Javascript functions are pure functions because it always return the same result when passed with same arguments.
+
+let const and var differences
+----> var ==> 1) variables declared using var can be used even before declaring.
+              2) variables declared using var can be re-declare. 
+              3) variables declared using var can be re-assigned.
+
+----> let ==> 1)  variables declared using let cannot be used before declaring.
+              2) variables declared using let cannot be re-declared.
+              3) variables declared using let can be re-assigned.
+
+----> const ==> 1) variables declared using const cannot be used before declaring.
+                2) variables declared using const cannot be re-declared.
+                3) variables declared using const cannot be re-assigned.
+            
+NoTE-----> let and const are block scope variables.
