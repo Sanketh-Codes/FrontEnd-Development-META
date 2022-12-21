@@ -180,3 +180,62 @@ let const and var differences
                 3) variables declared using const cannot be re-assigned.
             
 NoTE-----> let and const are block scope variables.
+
+----------------------Destructuring---------------------------
+1) Destructuring means storing the item from the object or array into variables.
+    ex---> Math object has the built in property known as PI whose value is 3.14.....
+            Now we can store that value from Math object into a program variable.
+            let {PI} = Math.PI;
+
+-------------Differences between for-in loop and for of  loop
+
+NOTE--> Refer to hands-on file forOfLoop.js to understand the For of loop implementation of arrays and objects
+
+
+    1) for in loop will iterate on both the prototype of the object and the object 
+    2) for of loop using the Object.keys(object_name) will only iterate over the object itself
+         Note---> See the hands-on file diffForinForof.js
+
+---------------template literal--------------------
+1) this is the use of backtiks(``) instead of regular string ('' and "")
+2) Used in the console.log statements when need to evaluate any result insead of always using + like console.log('The addition of a and b is'+(a+b));
+    ex-->  let a = 1;
+            let b=2; 
+           console.log(`The sum of a and b is ${a+b}`); instead of console.log('The addition of a and b is'+(a+b));
+3)And also we can write the string inside  `` in multiple lines which will not be possible using the '' and ""
+4)using the backticks(``) we can have ' and " in our string
+  ex--> let str = `Hi!, he doesn't know that I("sanekth") is coming to the office`  This will not throw any error
+
+  Note---> please check the literal.js for more hands-on implementation 
+
+
+------------------Data Structures-----------------------------
+1) Data structures is the way of organising (storing) the data.
+In javascript we have 4 Data structures----> arrays, Objects, sets and maps.
+    We had alredy covered arrays and objects enough lets see other two
+    a) Maps ---> We store as a key value pair same as object but the difference is in object the key should be only of type string
+                Whereas in maps key can be of any type. And maps are iterable wherea as objects are not(iterable using the key)
+            
+        Note ===> See the implementation in hands-on map file mapIllus.js
+
+    b)    Arrays have 3 importnat methods
+    a)forEach()
+        ---> loops over the array for each and every element.
+    b)filter()
+        ---> iterate over all the elements and return the elements which matches the condition written 
+    c)map()
+        ---> maps each array item to other array based on  the calculation mentioned.
+
+Note====> See the above implementations in the hads-on file arrayMethodsImp.js
+
+    c) Set ----> used to store the unique items
+        ex--> var arr = [10,10,20,30,20];
+                var my_set = new Set(arr);
+                console.log(my_set); // {10,20,30}
+
+---------Rest and Spread operator-----------------------------
+In javascript ES6 we can use spread and rest operators on array objects.
+    a) Spread ---> used in the function call denoted by ...
+    b) rest ----> used in the function parameter and should always be the last parameter in the function declaration.
+
+Note===> See the implementation of rest and spread operator in restSpread.js file
