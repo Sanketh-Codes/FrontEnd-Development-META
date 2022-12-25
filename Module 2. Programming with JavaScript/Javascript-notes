@@ -239,3 +239,43 @@ In javascript ES6 we can use spread and rest operators on array objects.
     b) rest ----> used in the function parameter and should always be the last parameter in the function declaration.
 
 Note===> See the implementation of rest and spread operator in restSpread.js file
+
+----------Javascript Modules-------------------
+Module---> standalone piece of code that can be reused again and again.
+            standalone means you can add, remove or replace that unit of code.
+
+DOM Manipulation ----> used to update the web browser content using the js code in browser console.
+    NOte ==> see the code implementation and the browser wndow in the image DOM-manipulation.
+
+Process -->
+    1)First when we type in the URL to request some content from the server the server responds by providing the HTML code and in the browswer HTML code will be saved and the content loads on the browser window.
+    2)Then browser will create the DOM based on the HTML code received from the server as the document.
+    3)It is that DOM document which developers used to interact with and make the changes.
+    4)The changes will be only restricted to the local browser content and will not update the content in the server
+    5)The changes will be lost as soon as we refresh the browser as the DOM will again be crated based on the HTMLcode received from server.
+
+-------Adding eventListener-------------------
+NOTE---> see the hands-on file eventListener.html and eventListener.js for the full understanding and implementation.
+
+-----Steps of adding the HTML element using the document object and adding the eventListener-------------------
+    step1===> First we need to add the element like h1,h2 or p or any other using the createElement function which takes the element as parameter and assign it to any variable.
+                var h1 = document.createElement('h1')
+    step2===> Then we need to add if we need to add any attributes using setAttribute('attributename','attributevalue')
+                h1.setAttribute('onClick','function_name')
+    step3===> Then we need to add the body innterText to the document object
+                document.body.innerText = ''
+    step4===> Then append our created element to the document
+                document.body.append(h1)
+
+    example--> To create the input type text and display what is written in input when entered and clicked enter
+    var h1 = document.createElement('h1');
+    h1.innerText = 'Please enter your name'
+    var input = document.createElement('input')
+    input.setAtribute('type','text')
+    document.body.innerText = ''
+    document.body.append(h1)
+    document.body.append(input)
+    //adding the event listener to input and changing the h1 text to the text written in input field
+    input.addEvenListener('change',function changing(){
+        h1.innerHTML = input.value
+    })
