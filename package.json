@@ -1,0 +1,22 @@
+{
+  "name": "front-end-meta-certification",
+  "version": "1.0.0",
+  "description": "In this repository I am going to notedown all the important concepts learned from the META Front End developer certificate program and also include the projects done as a part of the program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanketh-Codes/FrontEnd-Development-META.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanketh-Codes/FrontEnd-Development-META/issues"
+  },
+  "homepage": "https://github.com/Sanketh-Codes/FrontEnd-Development-META#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

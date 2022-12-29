@@ -279,3 +279,39 @@ NOTE---> see the hands-on file eventListener.html and eventListener.js for the f
     input.addEvenListener('change',function changing(){
         h1.innerHTML = input.value
     })
+
+-------------------Testing-------------------------------------------
+1) Testing is used inorder to check the soure code is working as expected.
+2) We generally attain this by writing the unit tests.
+example---> function concatString(str1,str2){
+    return str1+str2;
+}
+For the above code the unitTest should be as follows
+    expect(concatString("abc","def")).toBe("abcdef");----> This check the taking the parameters inside the function in expect and check if the return result from source code is matching with the result of unitTest written in toBe.
+
+3) Types of Testing
+    a) E2E testing(End 2 End) ----> Here the entire web application needs to be open in the browser and the person checks the app exactly thinking in the perscpective of the end user before launch.
+        --> The tester may not be the developer here.
+        --> Very slow and time consuming.
+    b) Integrated testing ---> Here the developer tests the different modules and tests if they are working as expected when combined together.
+        --> Faster and cost effective than e2e testing.
+    c) Unit testing ---> Here the developer tests the isolated units for example in js they are functions
+        ---> Fastest and cheap.
+
+4) Here we are learning the JEST framework developed by META for writing the tests
+5) Advatanges of using JEST are 
+    a) code coverage---> Tells how much % of the code is being tested. The more the code covergage the less the chance of unidentified bugs.
+    b) Mocking ---> Used to reduce the time of wait when the UI developer needs data from he backend to test the functionality
+    c) Snapshot testing
+
+6) Steps on how to write the Tests
+    step1--> Verify if you have node and npm install by the command node --version and npm --version.
+    step2--> write the function and the behaviour you want as the source code --> addingTestCode.js --> function addingCode.
+    step3--> Inorder to test we need to have jest installed.
+    step4--> Before installing JEST run the command npm init. This creates the package.json file
+    step5--> Then run the command npm install --save-dev jest. This will install jest as the dev dependencies inside the package.json.
+    step6--> Create the test file addingTestCode.test.js.
+    step7--> Open the package.json file and near the test line number 7 change the text and assign test to jest.
+    step8--> Run the command npm run test and this will run test and see if the tests failing or passing.
+
+Note--> Fo each line of test what it does see the code files addingTestCode.js and addingTestCode.test.js
