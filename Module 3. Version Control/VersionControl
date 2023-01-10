@@ -1,0 +1,19 @@
+1) Version control ---> This is used to keep track of the code from the previous versions and e can always roll back to previous version of code at any point of time
+--> Benefits of verson control
+    a)colaborative
+    b)Can know not only when changes are made but also who made the changes
+    c)Can be confident that the code changes done will never break the unctionality as we can always go back to previous versions
+
+**NOTE**==> Refer to the git-cheat-sheet.pdf for some important git commands.
+2) In real time along side the version control system some other tool we use are
+    a) continuous integration(CI) ---> As soon as the developer commits the code the tool merges automatically so as to reduce merge conflicts
+    b) continuous delivery(CD) ---> Ones the CI tool merges the CD tool will build the package which is used o deploy
+    c) continuous deployement ---> The package will be first deployed to the test(staging) environment and then validation of deployement package and software changes willbe done and then ones validated will be deployed for the live(production) env.
+
+---------Command Line-----------------------
+1) The command line is the most powerful tool where we can perorm various tasks
+2) Some popular commands
+    a)cd desktop ---> Chnage Directory command will point to desktop
+    b)cd .. ---> Moves from the chid directoy and point to parent directory
+    c)mkdir new-folder ---> creates the new folder named new-folder where the cd points.
+    d)touch file.txt ---> used to create the new file
