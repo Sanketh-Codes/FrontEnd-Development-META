@@ -17,3 +17,21 @@
     b)cd .. ---> Moves from the chid directoy and point to parent directory
     c)mkdir new-folder ---> creates the new folder named new-folder where the cd points.
     d)touch file.txt ---> used to create the new file
+
+**Pipes are used to combine two or more commands where the output of first command acts as input to the second command
+example --> if file file1.txt has content ---> welcome to linux and file2.txt has lets become a pro
+to get word coun we can use wc command ---> cat file1.txt | wc -w this gives word count of file1.txt i.e, 3
+                                            cat file1.txt file2.txt | wc -w gives word count of both files.
+
+------Redirections--------------------------------------
+1) There are 3 types of redirections
+    a)Standard input(0)---> this is represented by <
+    b)Standard output(1)---> this is represented by >
+    c)Standard error(2) ---> this is represented by 2>
+
+Note--> less filename.txt is used to print the content of file
+
+grep command is used to search for the file or directory or the contens in the file
+--> grep Sam filename.txt ---> this will return the names starting with Sam (grep is case sensitive)
+--> grep -i Sam filename.txt ---> This will return the names that has sam may be starting,in middle or at end(-i flag ignores the case)
+---> grep -w Sam filename.txt ---> This will exactly search for only Sam (return only 1 result i.e Sam)
