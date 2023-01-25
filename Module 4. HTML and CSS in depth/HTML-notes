@@ -1,0 +1,76 @@
+1)HTML--> Hyper Text Markup Language
+    Hyper Text because we link page to other page
+    Markup because we use tags to dislay content
+
+2)Semantice HTML --> The tags which define the content to both browser and human
+    different types of sematic tags are
+    a)Sectioning tags
+        1)<header> --> Generally used to specify the branding name and logo
+        2)<nav> ---> Used to give the links present if any
+        3)<footer> --> It is in the bottom and generally used to mention copyright things
+        4)<main> --> specifies main content of the section or web page
+        5)<article> --> self contained info like blogs, news articles
+        6)<section> --> The standalone section which is used in the body or article
+        7)<aside> --> Generally  the secondary set and it has nothing to understand the main content.
+        8)<details> --> collapsed section and can be expanded if user wants to
+        9)<summary> --> The summary or caption of the <details>
+        10)<h1> to <h6> --> Headings and h1 the most important(big size) and h6 the least
+    B)Content tags
+        1)<blockquote>--> used to specify quotation
+        2)<dl> --> used to define the list
+        3)<dt>--> used to define the term or item in list
+        4)<dd>--> used to describe the term or item in <dt>
+        5)<figcaption>--> used to speciy the caption for the figure
+        6)<figure>--> Applies markup to figure
+        7)<hr> --> prints horizontal line
+        8)<menu> --> alternative for <ul>
+        9)<ol> --> ordered list
+        10)<p> --> paragraph
+        11)<pre> --> preformatted text generally renders in browser as monospace font(remember as light)
+        12)<ul> --> unordered list
+    C)Inline tags
+        1)<a> --> anchor tag to link oher html document
+        2)<abbr> --> mention that the text is abbrevation or acronym
+        3)<b> --> text appers as bold
+        4)<br> --> prints an emptly line or line break
+        5)<cite> ---> defines title of creative work generally in italics
+        6)<code> --> specifies that the text is computer code
+        7)<data> --> specifies that the text is machine understandable data
+        8)<em> --> emphasizes text
+        9)<i> --> italic text
+        10)<mark> --> ontaining text is highlighted
+        11)<q> --> small quotation
+        12)<s> --> describes text as strike
+        13)<samp> --> text is a sample
+        14)<small> --> text is small size like copyright and legal text
+        15)<span> --> generally written for some part of text so that can use css for that specific part
+        16)<strong> --> text in bold font and implies strong
+        17)<sub> --> subscriptes text and will be the downwards (remember as h20 ==> chemical name for water)
+        18)<sup> --> superscriptext and will be upwards (remember as 3rd and rd will be on slight right top of 3)
+        19)<time> --> used to display time and date
+        20)<u> --> used to underline the text
+        21)<var> --> text is variable in mathematical expression
+    D)Embeded contents and media tags
+        1)<audio> --> used to embed audio in web page
+        2)<canvas> --> used to render 2d and 3d graphics
+        3)<embed> --> Used as a containing element for external content provided by an external application such as a           
+                      media player or plug-in application
+        4)<iframe> --> used to embed nested webpage
+        5)<img> --> used to embed image in web page
+        6)<object> --> same as <embed> but external source is browser plugin
+        7)<picture> --> one <img> and one or more <source> generally used when we want alternate images for different devices
+        8)<video> --> used to embed viseo in web page
+        9)<source> --> used to specify media resources for <picture> <audio> <video>
+        10)<svg> --> scalar vector graphics
+    E)Table tags
+        1)<table> --> used to define a table and display data in table format in webpage
+        2)<thead> --> table header and typically consists of one <tr>
+        3)<tbody> --> table body and consists one or more <tr>
+        4)<tfoot> --> represents footer content of table and consists of one or more <tr>
+        5)<tr> ---> table row and when used with <thead> one <th> element and when used with <tbody> or <tfooter> one more       
+                    <td>
+        6)<td> --> represents text content of the cell
+        7)<th> --> header text content
+        8)<caption> --> defines caption of table element
+        9)<colgroup> --> defines group of one or more columns for formatting
+        10)<col> --> column in a table
