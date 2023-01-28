@@ -74,3 +74,69 @@
         8)<caption> --> defines caption of table element
         9)<colgroup> --> defines group of one or more columns for formatting
         10)<col> --> column in a table
+
+**NOTE** ===> The main use of semantics is tags is the accessability(for example disabled or any other) and search engine optimization.
+
+------------------META DATA--------------------------------------------------------
+1) Meta Data is defined as the data about the web page
+2) Meta Data is important because this tells helps in the search engine optimization(SEO)
+3) Meta Data is generally included in the head tag and the syntax is 
+    <meta name="" content="">
+    name attribute include the author, descripton, keywords(generally some search engines ignore and mark as spam), 
+        robots and viewport(search engines scale according to device like mobile ipad and monitor)
+    content attribute takes the value of the name 
+        author---> james
+        descripton ---> This page is about the famous book
+        keywords ---> cricket, sports
+        robots ---> index(intimates the search engine to analyze the page),follow(intimates the search engine to follow the liks of other page)
+                    noindex(not analyze the page), nofollow(dont follow links to other pages)
+        viewport ---> width =device-width, initial-scale=1.0(scales and gets the best user experience based on the screen)
+
+4)Basic meta tags (meta tags For SEO) 
+        <meta name="description"/> provides a brief description of the web page 
+        
+        <meta name=”title”/> specifies the title of the web page 
+        
+        <meta name="author" content="name"> specifies the author of the web page  
+        
+        <meta name="language" content="english"> specifies the language of the web page 
+        
+        
+        
+        <meta name="robots" content="index,follow" /> tells search engines how to crawl or index a certain page 
+        
+        <meta name="google"/> tells Google not to show the sitelinks search box for your page when showing search results 
+        
+        <meta name="googlebot" content=”notranslate” /> tells Google you don’t want to provide an automatic translation for your page if the user uses a different language  
+        
+        <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" /> specifies the last modified date and time on which you have made certain changes 
+        
+        <meta name="rating" content="safe for kids"> specifies the expected audience for your page 
+        
+        <meta name="copyright" content="Copyright 2022"> specifies a Copyright 
+5)<meta http-equiv="..."/> tags
+        <meta http-equiv="content-type" content="text/html"> specifies the format of the document returned by the server 
+
+        <meta http-equiv="default-style"/>  specifies the format of the styling document 
+
+        <meta http-equiv="refresh"/> specifies the duration of the page before it’s considered stale 
+
+        <meta http-equiv=”Content-language”/> specifies the language of the page 
+
+        <meta http-equiv="Cache-Control" content="no-cache"> instructs the browser how to cache your page
+6)Responsive design/mobile meta tags 
+        <meta name="format-detection" content="telephone=yes"/> indicates that telephone numbers should appear as hypertext links that can be clicked to make a phone call 
+
+        <meta name="HandheldFriendly" content="true"/> specifies that the page can be properly visualized on mobile devices 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> specifies the area of the window in which web content can be seen
+
+
+---> Generally when we share the link through the whatsaap chat we see that the along with the link some text and images    
+     will also be shown as the preview and this is acheived using the meta tag only and is calles as "Open Graph Protocol"
+---> This is also defined in the Head tag using the following syntax        
+    <meta property="og:name" content="name">
+    here always the property should begin with the og: and name can be like title, image, url, type(image, video,book),description.
+
+This open graph protocol helps the user to know about the website even before visiting the link by seeing the preview and thus increases 
+    the user experience.    
