@@ -140,3 +140,110 @@
 
 This open graph protocol helps the user to know about the website even before visiting the link by seeing the preview and thus increases 
     the user experience.    
+
+--------------FORMS---------------------
+forms validation can be done in ways
+1)client side validation ---> allows basic functionalities using the type of the input and validating against the data entered.
+2)server side validation ----> allows more complex checking and also can check the data matching the database values and business requirements
+
+-------common input fields--------------------
+1)button
+    syntax --> <input type="button" id name value onclick="">
+    syntax --> <button id name value onClick></button>
+    note--> the difference btw both is with <button></button> we can place text or images as button.
+
+2)checkbox
+    syntax --> <input type="checkbox">
+    note --> one or more values casn be selected
+
+3)Radio
+    syntax --> <input type="radio">
+    note --> unlike checkbox we can only select one
+4)submit
+    generally used to submit all html form values to form handler generally a server and the for, handler is written in the action 
+    syntax --> <form action="" method="get or post">
+        -----------------
+        <input type="submit">
+    </form> 
+5)Text
+    syntax -- <input type="text">
+6)password
+    syntax --> <input type="password">
+7)date  
+    syntax --> <input type="date">  ===> only date i.e month and year and no time
+8)Datetime local
+    syntax --> <input type="datetime-local"> ===? included both date time
+9)email
+    syntax --> <input type="email">
+10)file
+    syntax --> <input type="file">
+    gives the control to upload the files to upload from computer
+     ==> for particular types of files to accept provide the accept attribute
+     ==> for multiple file provide multiple attribute
+11) Hidden
+    syntax --> <input type="hidden" id="custId" name="custId" value="3487">
+    not displayed on the Ui but value submitted to server
+12)image
+    syntax --> <input type="image" src="">
+    used to display image as a submit button and src should hold the image location
+13)number and range
+    syntax -> <input type="number" min="" max="">
+14)telephone
+    syntax --> <input type="tel">
+15)reset
+    syntax --> <input type="reset">
+    resets the entire form to default values
+16)search   
+    defines a text field to enter a search query
+    <input type="search">
+17)url(performs automatic validation before sending data to server)
+    syntax --> <input type="url">
+
+
+*****note***** ====> The id attribute is used in theinput field because the same id attribute value will be used to set the label.
+    example--> <label for="first_name">First name</label><br>
+                <input type="text" id="first_name" name="first_name">
+    and the name attribute is used because in the server side ones the form is submitted we can access the value using the name attribute value only
+
+Why client side validation?
+    client side validation increases the accessability and improve user experience
+    And also minimize the unnecesassary http requests to the server i.e, minimizing the server resources
+
+NOTE---> see the radio-practical.html to understand how radio buttons works
+
+IMPORTANT----> How to add a datalist to the form
+    step 1 -> create a input field and add the attributes id and name same like the other input types
+        <input id="booking_location" name="booking_location">
+    step 2 -> Then add another attribute named lists
+        <input id="booking_location" name="booking_location" lists="locations">
+    step 3 -> Then add the data lists and id attribute and the value of this id attribute should match with the value of the lists attribute in input field
+        <datalist id="locations">
+            <option value="silicon valley"></option>
+            <option value="Colorado Boulder"></option>
+        </datalist>
+    
+        final code with the label
+        -----------------------------------------
+        <label for="booking_location">Select location</label>
+        <input id="booking_location" name="booking_location" lists="locations">
+        <datalist id="locations">
+            <option value="Silicon Valley"></option>
+            <option value="Colorado Boulder"></option>
+        </datalist>
+    
+The use of the datalist is when we have 1000s of values in the list its very hard to seearch for required value manually 
+so with datalist we can start tyoing the required value and then select from the lists(minimized) 
+
+-----Difference between get and post methods of form submitting----------
+1)Get method ---> extremely vulnerable to threats and not secure because    
+        the form data we enter apends to the URl 
+        other drawback --> URL length becomes too large and might possible that the server cant get entire data because
+                           some we browsers and servers are confined to certain URL length
+2)Post method --> recommended and secure but third parties can still access the form data who is listening the http requests
+        here the form data is sent as the body to the server
+    
+        To secure further we need to use the HTTPS which only receiver and sender has the access to the data.
+    
+The form fields looks different in different browsers and that makes the visibility inconsistency amongst the users
+        To tackle that problem we can use the CSS styling to style the input fields or make use of libraries like 
+            bootstrap, tailwind css and foundation
