@@ -247,3 +247,20 @@ so with datalist we can start tyoing the required value and then select from the
 The form fields looks different in different browsers and that makes the visibility inconsistency amongst the users
         To tackle that problem we can use the CSS styling to style the input fields or make use of libraries like 
             bootstrap, tailwind css and foundation
+
+---> video tag
+        <video height="" width="" controls loop> <!--loop is used to continuously run the video from start after completed entire-->
+            <source src="" type="">
+        </video>
+---> audio tag
+        <audio controls loop>
+            <source src="" type="">
+        </audio>
+
+-----------------iframes-----------------------
+These are used if you want to embed other external website content onto your website
+        <iframe src=""></iframe>
+    It is imporatant to note that there are many security vulnerabilities and can be solved using the allows attribute
+        <iframe src="" allow="camera 'none';microphone 'none'"></iframe> <!--This will not allow the camera and microphone-->
+    There is another attribute called sandbox which restricts the most important vulnerability
+    <iframe src="" sandbox=""></iframe> <!--This will not allow any feaures-->

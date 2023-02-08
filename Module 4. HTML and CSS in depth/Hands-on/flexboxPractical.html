@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                background-color: aqua;
+                margin: 5px;
+                padding: 5px;
+            }
+            .flexbox-grids{
+                display: flex; /*This by deafult makes all the div elements allign in main axis that is x-axis*/
+                /*flex-direction: column; /*This makes the div arrange in the vertical column*/
+                justify-content  :center  /*This makes the div if alligned in the x-axis the items will be alligned in ceter*/ 
+                /* align-items : center; The column alligned items div will be alligned in center */
+            }
+            .flexbox-grid{
+                display: flex;
+                flex-flow: row wrap; /*This property allows to take the extra elements to next row*/
+                justify-content: stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div class="flexbox-grid">
+                <div class="box box1">TCS</div>
+                <div class="box box2">Google</div>
+                <div class="box box3">Meta</div>
+                <div class="box box1">TCS</div>
+                <div class="box box2">Google</div>
+                <div class="box box3">Meta</div>
+                <div class="box box1">TCS</div>
+                <div class="box box2">Google</div>
+                <div class="box box3">Meta</div>
+                <div class="box box1">TCS</div>
+                <div class="box box2">Google</div>
+                <div class="box box3">Meta</div>
+                
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+---> CSS (Cascading Style sheet) used to design the web page (viewport means the website whuch we see).
+---> previously we used the container class but CSS provides flexbox and grid which are responsive design options unlike container.
+---> different bewtween flrxbox and grid?
+    both are responsive but the difference is flexbox is 1-dimension i.e, the space gros or shrinks in either horizontal or vertical where as grid is 2-Dimensional.
+    **NOTE** ---> lets see the flexbox-implementaion in flexboxPractical.html
+---> uses of flexboxes
+    a)used for the inline search box
+    b)used for the navigation bar
+    c)used for image gallery
