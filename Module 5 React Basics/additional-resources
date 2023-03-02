@@ -11,3 +11,22 @@
 11)NPM docs node module folder ---> https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules
 12)webpack docs web server ---> https://webpack.js.org/configuration/dev-server/
 13)webpack devserver on github ---> https://github.com/webpack/webpack-dev-server
+14)components and props ---> https://reactjs.org/docs/components-and-props.html
+15)introucing jsx ---> https://reactjs.org/docs/introducing-jsx.html
+16)styling and css in react ---> https://reactjs.org/docs/faq-styling.html
+17)introducing expressions in jsx ---> https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx
+18)Hndling events ---> https://reactjs.org/docs/handling-events.html#gatsby-focus-wrapper
+19)supported events ---> https://reactjs.org/docs/events.html#supported-events
+20)synthetic events ---> https://reactjs.org/docs/events.html#gatsby-focus-wrapper
+21)How to pass event handler ---> https://reactjs.org/docs/faq-functions.html#how-do-i-pass-an-event-handler-like-onclick-to-a-component
+22)js expressions as props ---> https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-props
+23)js expressions as children ---> https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children
+24)react router v6 ---> https://reactrouter.com/en/main
+25)Nav the navigation section element ---> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+26)Ternary operator js ---< https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator>
+27)if else ---> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+28)web packs docs ---> https://webpack.js.org/guides/getting-started/
+29)webpack asset management ---> https://webpack.js.org/guides/asset-management/
+30)npm docs ---> https://docs.npmjs.com/
+31)react player on npm ---> https://www.npmjs.com/package/react-player
+32)video and audio content on web ---> https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content

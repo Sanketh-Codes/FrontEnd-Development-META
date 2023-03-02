@@ -1,0 +1,158 @@
+React is widely used as it is the js library and also easy to understand
+---> In react the small components combine to create a UI website.
+---> Lets understand the exports and imports
+    For example you are using the function and want that to be used in part of the application so we make that file as module
+    First we need to export that module so that we can import where ever we want
+    Ways of exporting the module
+    1)default export(using this we can have only one per module)
+    example -> default export function addTwo(a,b){
+        console.log(a+b);
+    }
+    or 
+    function addTwo(a,b){
+        console.log(a+b);
+    }
+     export default addTwo;
+    2)named export(can have many)
+    example -> export function addTwo(a,b){
+        console.log(a+b);
+    }
+    or
+     function addTwo(a,b){
+        console.log(a+b);
+    }
+    export {addTwo};
+    ===> Now lets see imports
+    import is used wherever we want to use the exported module
+    If we are exporting using the default export then
+        import addTwo from "module location"
+    If we are importijng using export then
+        import {addTwo} from "module location"
+    
+**NOTE** ---> The default exort is used when the file name is same as function name and the named export is used when the file name is different from the file names
+---> To craete the react app just run the following command
+    npm init react-app appname
+To start the react app just run npm start
+
+------------------Props------------------------
+---> we use props inorder to send the data from one component to other CompositionEvent
+---> The component sending the data is the parent and the one receiving is the child CompositionEvent
+---> The props is just like the Javascript object and is places in the child component in the function parameter
+---> parent component example ---> 
+    <APP title="Welcome to react" />
+---> child component 
+        function App(props){
+            return(
+                <h1>{props.title}</h1>
+            )
+        }
+--------styling the JSX elements---------------
+1)using the link attribute in the index.html and href to the css file 
+    Then where ever in the application for the elements needed to be styled just include the className=""
+2)using the inline styling
+    ex--> <h1 style={{color:"yellow",fontSize="40px"}}>
+    **NOTE** ---> here the properties become camelCased like fontSize(in html generally it will be font-size)
+3)declaring and using in the component itself
+    function app(props){
+        const styles = {
+            color:"yellow",
+            fontSize:"40px"       
+        }
+        <h1 style={styles}>
+    }
+
+---------------Event Hnadling in React-----------------------
+---> Just like in html we can handle all the events in react in the JSX
+---> But the difference in the spelling for example. In HTML we use onclick() but in react we use onClick()
+---> To handle the events in HTML we use funcion as follows
+    <button onclick="addToCart()">add to cart</button>
+    Butwhere as in the react we do this as follows
+    <button onClick={handleClick}>add to cart</button> ---> here handleClick works as the function call and we describe the function as
+    a)function handleClick(){} or
+    b)() => {}
+        Both the above can bve directly used inside the onClick() like
+        <button onClick={function handleClick() {}}>add to cart</button> and 
+        <button onClick={()=>{}}>add to cart</button>
+    c)declaring the function or expression outside the return statement as follows
+        function handleClick() {
+
+        }
+        or
+    d)const handleClick = () => {}
+        and inside the jsx return statement as follows
+        <button onClick={handleClick}>add to cart</button>
+
+------Passing data from parent component to child component----------------
+
+To acheive this in the parent component we need to declare one data object which consists of heading and callToAction as follows
+
+const data = {
+    heading:"This is first heading update here so that it updates in allother child components"
+    callToAction:"This is second heading"
+}
+and in the parent component as follows
+    function parentComponent(){
+        return(
+            <childComponent heading = {data.heading}
+            callToAction = {data.callToAction}/>
+        )
+    }
+    export default parentComponent;
+    
+And in the child component  
+    function childComponent(props) {
+        return(
+            <h1>{props.heading}</h1>
+            <h2>{props.callToAction}</h2>
+        )
+    }
+    
+-----------React Navigation routing-----------------
+1) like in html we cannot use anchor tag in react because anchor tag refresh the entire page and takes to the new page but 
+    react is the single page application(SPA)
+2) In order to acheive the routing the steps to follow are  
+    a) install the router from npm using command    
+        npm i react-router-dom@6
+    b)Then in index.js file import browserrouter 
+        import {BrowserRouter} from 'react-react-dom'
+    c)Then we need to insert the <App /> inside the <BrowserRouter> like
+        <BrowserRouter>
+            <App />
+        </browserrouter>
+    d)In the APP.js file import Route and Routes and Link
+        import {Routes, Route,Link} from 'react-router-dom'
+    e) In order to create the create the Navbar instread of using the traditional anchor tag <a> tag here we do as follows
+        <Link to="/" className="">Home</Link>
+        <Link to="/about-me" className="">About Me</Link>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-me" element={<About me />} />
+        </Routes>
+            Here "/" is the path
+            We can observe the changes in the URL when clicking on different links
+
+---------Assets--------------------------------------------
+1)Assets are the files(images,audio,video text or any type) which are required for the app at the run time
+2)We generally create the assets folder inside the src folder like follows
+    for suppose images
+        src ---> assets ---> images ---> cat.jpg (Here cat.jpg is the file name where we have the cat picture)
+3)In order to use them (cat.jpg) in our component there are two Ways    
+    a)By importing
+        import Cat from './assets/images/cat.jpg';
+    and then using in the <img> tag 
+        <img src={Cat} alt="The image of the cat" />
+    b)without importing using required
+        <img src={require('./assets/images/cat.jpg')} alt="The image of the cat" />
+    
+4)using audios and videos 
+    a)If we have the file locally we can directly use using the <video src={Link to file} />
+    b)using the embeded file
+    c)using the npm package
+        Gneneral way is to install the react-player by using npm install react-player
+        and then import as follows
+            import ReactPlayer from "react-player";
+        and use as follows
+            <ReactPlayer url="" />
+    If we want video from specific sote say youtube import as 
+        import ReactPlayer from "react-player/youtube";
+    This will decrease the bundle size.
