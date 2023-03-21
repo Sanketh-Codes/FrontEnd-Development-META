@@ -7,3 +7,39 @@
     a)used for the inline search box
     b)used for the navigation bar
     c)used for image gallery
+
+-----------CSS selectors-------------------
+1)We already know there are element selectors(p,h1,etc) , class selectors and id selectors
+2)Apart from those there are several other selectors
+    a)Attribute selectors
+        example --> a[class]{
+            //this selects and applies css for all the anchor tags which have the class
+        }
+        and 
+        a[href*="meta"]{
+            //this applies css to all the anchor tags which has the meta name in the href value attribute
+        }
+    b)n-th of child or n-th of type selector
+        example --> li:nth-child(2){
+            //this selects the nd child of the parent here in this case parent is UL or OL 
+        }
+        or
+        li:nth-of-type(2){
+             //this selects the nd child of the parent here in this case parent is UL or OL
+        }
+3)Star selector
+    example --> *{
+        //this selects all the elements of that particular HTML page
+    }
+4)Group selector
+    if we want apply same css to both elements we can group them like
+    p,h1{
+        //both p and h1 elements are selected and styles are applied
+    }
+
+Note---> If the different styles are given to the same element by mistake then css engine follws some order and weight them and finally produces the styles
+    order of the styles are
+        a)inline ---> highest priority
+        b)id
+        c)classes and pseudo classes
+        d)elements,pseudo elements
